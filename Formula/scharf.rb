@@ -4,7 +4,6 @@ class Scharf < Formula
   homepage "https://github.com/cybrota/scharf"
   version "1.1.3"
   license "Apache-2.0"
-  depends_on :macos
 
   on_macos do
     on_intel do
