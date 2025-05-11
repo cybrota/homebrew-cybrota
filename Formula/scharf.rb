@@ -41,7 +41,7 @@ class Scharf < Formula
     on_arm do
       url "https://github.com/cybrota/scharf/releases/download/v#{version}/scharf_Linux_arm64.zip",
           using: CurlDownloadStrategy
-      sha256 "6bec81cc5c545af37c4830607f67e9f2ecada4684df6ff5017cf53f32da03956"
+      sha256 "82c8271737faf8948360ff6f82283eba5e8c636a8e435ecb21b4e1a65dad0a46"
 
       def install
         bin.install "scharf"
