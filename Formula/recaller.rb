@@ -9,7 +9,7 @@ class Recaller < Formula
       url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Darwin_x86_64.zip",
           using: CurlDownloadStrategy
       sha256 "ce82992fb13fd7016f69f7ead35cd1e5e60532a447e3abe6660fe0568a230c21"
-  
+
       def install
         bin.install "recaller"
       end
@@ -19,7 +19,7 @@ class Recaller < Formula
       url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Darwin_arm64.zip",
           using: CurlDownloadStrategy
       sha256 "ebe60f05e0df2b6e830958638ada3b81130467bb1a70cf4550fcecd933c2325d"
-  
+
       def install
         bin.install "recaller"
       end
