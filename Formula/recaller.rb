@@ -1,14 +1,14 @@
 class Recaller < Formula
   desc "Fast, private command history search with instant documentation"
   homepage "https://github.com/cybrota/recaller"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
       url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Darwin_x86_64.zip",
           using: CurlDownloadStrategy
-      sha256 "f26a78e3085ea229a193d56cd92f12fee85cfbdb34bc7a3aa95b39994d53b171"
+      sha256 "ce82992fb13fd7016f69f7ead35cd1e5e60532a447e3abe6660fe0568a230c21"
   
       def install
         bin.install "recaller"
@@ -18,7 +18,7 @@ class Recaller < Formula
     on_arm do
       url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Darwin_arm64.zip",
           using: CurlDownloadStrategy
-      sha256 "8b93abb3dc5ce64888d90e8c7bfe8b649fa252177c8a7729a5f76cdf7da5286f"
+      sha256 "ebe60f05e0df2b6e830958638ada3b81130467bb1a70cf4550fcecd933c2325d"
   
       def install
         bin.install "recaller"
@@ -30,7 +30,7 @@ class Recaller < Formula
     on_intel do
       url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Linux_x86_64.zip",
           using: CurlDownloadStrategy
-      sha256 "d06e8fde4b9b23f112e385e169b1d652140e39947ad6eca3e7ca84c1b466e871"
+      sha256 "06db2162524153e9f5898095c2846f8c21cd41cac44131bafa622ca9f0d15328"
 
       def install
         bin.install "recaller"
@@ -40,7 +40,7 @@ class Recaller < Formula
     on_arm do
       url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Linux_arm64.zip",
           using: CurlDownloadStrategy
-      sha256 "e8b8fdbfef004c5eeee034410ef1dc66bf0b7eaba62c292563afdce636a0baca"
+      sha256 "caa85519cdf44b3de90e3235994817feaea2fc41d53704b84c657a8af8fe3033"
 
       def install
         bin.install "recaller"
