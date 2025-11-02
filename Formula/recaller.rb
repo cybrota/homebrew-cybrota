@@ -1,30 +1,30 @@
 class Recaller < Formula
   desc "Fast, private command history search with instant documentation"
   homepage "https://github.com/cybrota/recaller"
-  version "0.5.0"
+  version "0.5.1"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
       url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Darwin_x86_64.zip"
-      sha256 "f77a0caf67e4523eef1b326390416e9e80951e2e518cd781089fab560ca14f71"
+      sha256 "df100e9510b860f4bd7cac4845402f87bd1308aae372f22e80b3db787aef4fe3"
     end
 
     on_arm do
       url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Darwin_arm64.zip"
-      sha256 "ce8e591cfa7775fff6f0235627e36b23ff039dd32526662198f0cb5184e58f0a"
+      sha256 "122fedf695b7039490fcfe28dbfff584f532c32d100e1b54f4ea40a4cfd60a6e"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Linux_x86_64.zip"
-      sha256 "09ef2feeea1a86d967f2434114fc06a78999e39e9d4a939213789eb6af1b9c68"
+      sha256 "894c96a7fefb45d0c3bf458f2c34287a163d393e266a926c3ca0f238a86db586"
     end
 
     on_arm do
       url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Linux_arm64.zip"
-      sha256 "e8b030fc81be31d9831453962aa2f408909b647f736ebed308bfc8d9a774a22b"
+      sha256 "3f0a0f0c49e71becf8bae151cd09dce17d3c2c7b8b2ef2feda170c66bed2502f"
     end
   end
 
