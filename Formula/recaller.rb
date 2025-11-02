@@ -1,54 +1,30 @@
 class Recaller < Formula
   desc "Fast, private command history search with instant documentation"
   homepage "https://github.com/cybrota/recaller"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
-    on_intel do
-      url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Darwin_x86_64.zip",
-          using: CurlDownloadStrategy
-      sha256 "ce82992fb13fd7016f69f7ead35cd1e5e60532a447e3abe6660fe0568a230c21"
+    arch arm: "arm64", intel: "x86_64"
 
-      def install
-        bin.install "recaller"
-      end
-    end
-
-    on_arm do
-      url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Darwin_arm64.zip",
-          using: CurlDownloadStrategy
-      sha256 "ebe60f05e0df2b6e830958638ada3b81130467bb1a70cf4550fcecd933c2325d"
-
-      def install
-        bin.install "recaller"
-      end
-    end
+    url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Darwin_#{arch}.zip"
+    sha256 arm: "ce8e591cfa7775fff6f0235627e36b23ff039dd32526662198f0cb5184e58f0a",
+           intel: "f77a0caf67e4523eef1b326390416e9e80951e2e518cd781089fab560ca14f71"
   end
 
   on_linux do
-    on_intel do
-      url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Linux_x86_64.zip",
-          using: CurlDownloadStrategy
-      sha256 "06db2162524153e9f5898095c2846f8c21cd41cac44131bafa622ca9f0d15328"
+    arch arm: "arm64", intel: "x86_64"
 
-      def install
-        bin.install "recaller"
-      end
-    end
+    url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Linux_#{arch}.zip"
+    sha256 arm: "e8b030fc81be31d9831453962aa2f408909b647f736ebed308bfc8d9a774a22b",
+           intel: "09ef2feeea1a86d967f2434114fc06a78999e39e9d4a939213789eb6af1b9c68"
+  end
 
-    on_arm do
-      url "https://github.com/cybrota/recaller/releases/download/v#{version}/recaller_Linux_arm64.zip",
-          using: CurlDownloadStrategy
-      sha256 "caa85519cdf44b3de90e3235994817feaea2fc41d53704b84c657a8af8fe3033"
-
-      def install
-        bin.install "recaller"
-      end
-    end
+  def install
+    bin.install "recaller"
   end
 
   test do
-    system "#{bin}/recaller", "--version"
+    system bin/"recaller", "--version"
   end
 end
