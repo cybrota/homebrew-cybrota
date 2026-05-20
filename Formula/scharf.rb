@@ -9,7 +9,7 @@ class Scharf < Formula
     on_intel do
       url "https://github.com/cybrota/scharf/releases/download/v#{version}/scharf_Darwin_x86_64.zip",
           using: CurlDownloadStrategy
-      sha256 "d165943fd6b7050b291cf1926748a96ac3431e247098c4e7e174e7423f2dc43f"
+      sha256 "f6a13efaa5c2aa375ce405daea4be059c52813f4042f798aed84bf90a9c14f40"
   
       def install
         bin.install "scharf"
@@ -19,7 +19,7 @@ class Scharf < Formula
     on_arm do
       url "https://github.com/cybrota/scharf/releases/download/v#{version}/scharf_Darwin_arm64.zip",
           using: CurlDownloadStrategy
-      sha256 "7384d23cff6d0262390644a866fc084965ab7899bdaf29dec0f74fd6f5e91b07"
+      sha256 "459a779365086ea27a232dac478d76b50b784ebb757fd12f8d8b5d41c7f3271a"
   
       def install
         bin.install "scharf"
@@ -31,7 +31,7 @@ class Scharf < Formula
     on_intel do
       url "https://github.com/cybrota/scharf/releases/download/v#{version}/scharf_Linux_x86_64.zip",
           using: CurlDownloadStrategy
-      sha256 "ea8b9a52c973ee7357014b01cfc8da269f6b7a12899e70f6733b0e533eba6801"
+      sha256 "dc316e0aee45bb131d97af8f2d105620a432938a02ecc845594bc470674a4d50"
 
       def install
         bin.install "scharf"
@@ -41,7 +41,7 @@ class Scharf < Formula
     on_arm do
       url "https://github.com/cybrota/scharf/releases/download/v#{version}/scharf_Linux_arm64.zip",
           using: CurlDownloadStrategy
-      sha256 "840ae247b78c399ff4828dda01c9a28f061a30b008346e528baf23300e695249"
+      sha256 "7a121aff98ebad92273d3290be2da5f926f4bbce1240b8c6aa7862f1b37eba31"
 
       def install
         bin.install "scharf"
