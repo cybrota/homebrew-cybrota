@@ -2,7 +2,7 @@
 class Scharf < Formula
   desc "Prevent supply-chain attacks from your third-party GitHub actions"
   homepage "https://github.com/cybrota/scharf"
-  version "1.4.0"
+  version "1.4.1"
   license "Apache-2.0"
 
   on_macos do
