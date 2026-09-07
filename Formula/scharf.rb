@@ -2,14 +2,15 @@
 class Scharf < Formula
   desc "Prevent supply-chain attacks from your third-party GitHub actions"
   homepage "https://github.com/cybrota/scharf"
-  version "1.4.1"
+  version "0.5.1"
   license "Apache-2.0"
+  version_scheme 1
 
   on_macos do
     on_intel do
       url "https://github.com/cybrota/scharf/releases/download/v#{version}/scharf_Darwin_x86_64.zip",
           using: CurlDownloadStrategy
-      sha256 "f6a13efaa5c2aa375ce405daea4be059c52813f4042f798aed84bf90a9c14f40"
+      sha256 "7eaf6fd3837385d2a405069e452d3ef2e6543ab999ea52fe8e7d3af89b197f90"
   
       def install
         bin.install "scharf"
@@ -19,7 +20,7 @@ class Scharf < Formula
     on_arm do
       url "https://github.com/cybrota/scharf/releases/download/v#{version}/scharf_Darwin_arm64.zip",
           using: CurlDownloadStrategy
-      sha256 "459a779365086ea27a232dac478d76b50b784ebb757fd12f8d8b5d41c7f3271a"
+      sha256 "8823c95fc130e44523c62e399a2c277bf4e8cb4d5dd26bb4d69a382dc2bf2933"
   
       def install
         bin.install "scharf"
@@ -31,7 +32,7 @@ class Scharf < Formula
     on_intel do
       url "https://github.com/cybrota/scharf/releases/download/v#{version}/scharf_Linux_x86_64.zip",
           using: CurlDownloadStrategy
-      sha256 "dc316e0aee45bb131d97af8f2d105620a432938a02ecc845594bc470674a4d50"
+      sha256 "0a59c564c5178ad1d7982e9f026300faaffaa606d5ef7c51e84a3ebf56e3d929"
 
       def install
         bin.install "scharf"
@@ -41,7 +42,7 @@ class Scharf < Formula
     on_arm do
       url "https://github.com/cybrota/scharf/releases/download/v#{version}/scharf_Linux_arm64.zip",
           using: CurlDownloadStrategy
-      sha256 "7a121aff98ebad92273d3290be2da5f926f4bbce1240b8c6aa7862f1b37eba31"
+      sha256 "e7acee237780289af35aa6075cfea9bbf90b1b2a64ce67f3278d2bf02df933db"
 
       def install
         bin.install "scharf"
